@@ -42,7 +42,7 @@ server <- function(input, output) {
     }
     if (input$rv1=="Student's t")
     {
-      s1 <- rt(500, 5, input$rv1_mean)
+      s1 <- rt(500, 5, input$rv1_mean) # Not exactly the mean (non central parameter is asymptotically the mean when df -> inf, although the convergence is very fast!)
     }
     if (input$rv1=="Exponential")
     {
